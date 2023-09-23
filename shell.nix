@@ -2,20 +2,26 @@
 
 pkgs.mkShell {
   name = "default";
-  packages = [
-    pkgs.zsh
-    pkgs.neovim
-    pkgs.htop
+  packages = with pkgs; [
+    zsh
+    neovim
+    htop
 
-    pkgs.python3
+    python3
+    pyright
 
-    pkgs.git
-    pkgs.curl
-    pkgs.jq
+    (python3.withPackages (ps: [
+      ps.pynvim
+    ]))
+
+    file
+    git
+    curl
+    jq
   ];
 
   shellHook = ''
     zsh
     exit
   '';
-} 
+}
