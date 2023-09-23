@@ -4,6 +4,7 @@ pkgs.mkShell {
   name = "default";
   packages = with pkgs; [
     zsh
+    oh-my-zsh
     neovim
     htop
 
