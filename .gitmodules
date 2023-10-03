@@ -1,3 +1,6 @@
 [submodule "config/nvim/plugged/LuaSnip"]
 	path = config/nvim/plugged/LuaSnip
 	url = https://github.com/L3MON4D3/LuaSnip
+[submodule "config/nvim/plugged/catpuccin"]
+	path = config/nvim/plugged/catpuccin
+	url = https://github.com/catppuccin/nvim.git
