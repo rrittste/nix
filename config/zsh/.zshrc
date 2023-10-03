@@ -119,4 +119,5 @@ alias vim="nvim"
 
 export PATH="$PATH:/usr/lib/dart/bin"
 
+eval "$(starship init zsh)"
 if [ -e /home/rrittste/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rrittste/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

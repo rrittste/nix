@@ -8,7 +8,7 @@ pkgs.mkShell {
   name = "default-nix";
 
   # ZDOTDIR = "${home}/.config/default-nix/zsh/";
-  # ZDOTDIR = "${currentDir}/config/zsh";
+  ZDOTDIR = "${currentDir}/config/zsh";
   ## Variable is not used anymore
   # MYVIMRC = "${currentDir}/config/nvim/init.vim";
   XDG_CONFIG_HOME = "${currentDir}/config";
