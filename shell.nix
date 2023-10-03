@@ -12,11 +12,14 @@ pkgs.mkShell {
   ## Variable is not used anymore
   # MYVIMRC = "${currentDir}/config/nvim/init.vim";
   XDG_CONFIG_HOME = "${currentDir}/config";
+  ZSH = "${currentDir}/config/zsh/oh-my-zsh";
+  NVIM_PACKPATH = "${currentDir}/config/nvim/plugged/";
   PAGER = "most";
 
   packages = with pkgs; [
     zsh
     oh-my-zsh
+    starship
 
     neovim
 

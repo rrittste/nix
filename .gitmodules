@@ -4,3 +4,6 @@
 [submodule "config/nvim/plugged/catppuccin"]
 	path = config/nvim/plugged/catppuccin
 	url = https://github.com/catppuccin/nvim.git
+[submodule "config/zsh/oh-my-zsh"]
+	path = config/zsh/oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
