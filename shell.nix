@@ -2,11 +2,16 @@
 
 let
   home = builtins.getEnv "HOME";
+  currentDir = builtins.toString ./. ;
 in
 pkgs.mkShell {
   name = "default-nix";
 
-  ZDOTDIR = "${home}/.config/default-nix/zsh/";
+  # ZDOTDIR = "${home}/.config/default-nix/zsh/";
+  # ZDOTDIR = "${currentDir}/config/zsh";
+  ## Variable is not used anymore
+  # MYVIMRC = "${currentDir}/config/nvim/init.vim";
+  XDG_CONFIG_HOME = "${currentDir}/config";
   PAGER = "most";
 
   packages = with pkgs; [
@@ -15,6 +20,8 @@ pkgs.mkShell {
 
     neovim
 
+    statix
+
     python3
     pyright
 
@@ -22,6 +29,7 @@ pkgs.mkShell {
       ps.pynvim
     ]))
 
+    fd
     most
     man
     htop

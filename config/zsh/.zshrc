@@ -115,6 +115,7 @@ alias ls="exa"
 alias code="/mnt/c/Users/Robin/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe"
 alias winget="/mnt/c/Users/Robin/AppData/Local/Microsoft/WindowsApps/winget.exe"
 alias push="git add . && oc"
+alias vim="nvim"
 
 export PATH="$PATH:/usr/lib/dart/bin"
 
